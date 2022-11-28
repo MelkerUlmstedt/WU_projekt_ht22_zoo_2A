@@ -2,3 +2,71 @@
     margin: 0;
     padding: 0;
 }
+
+header {
+    height: 100px;
+    background-color: orange;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    
+}
+
+section {
+    background-color: red;
+    height: 600px;
+}
+
+footer {
+    background-color: blue;
+    height: 100px;
+}
+
+#gridwrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 600px ;
+    height: 100vh;
+    grid-template-areas: 
+    "d1 d2 d3";
+}
+
+.d1 {
+    grid-area: d1;
+    background-color: pink;
+    margin: 10px 5px 10px 10px;
+    border-radius: 20px;
+}
+
+.d2 {
+    grid-area: d2;
+    background-color: white;
+    margin: 10px 5px 10px 5px;
+    border-radius: 20px;
+}
+
+.d3 {
+    grid-area: d3;
+    background-color: green;
+    margin: 10px 10px 10px 5px;
+    border-radius: 20px;
+}
+
+h2 {
+    margin: 20px;
+    height: auto;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+#vardag {
+   
+}
+
+#helg {
+    
+}   
