@@ -31,42 +31,78 @@ footer {
     "d1 d2 d3";
 }
 
-.d1 {
+.ruta1 {
     grid-area: d1;
     background-color: pink;
     margin: 10px 5px 10px 10px;
     border-radius: 20px;
+    transition: 1s;
+    text-align: center;
+    border: solid black 3px;
 }
 
-.d2 {
+.ruta1:hover {
+    transform: scale(1.02);
+}
+
+.ruta2 {
     grid-area: d2;
     background-color: white;
     margin: 10px 5px 10px 5px;
     border-radius: 20px;
+    transition: 1s;
+    text-align: center;
+    border: solid black 3px;
 }
 
-.d3 {
+.ruta2:hover {
+    transform: scale(1.02);
+}
+
+.ruta3 {
     grid-area: d3;
     background-color: green;
     margin: 10px 10px 10px 5px;
     border-radius: 20px;
+    transition: 1s;
+    text-align: center;
+    border: solid black 3px;
+}
+
+.ruta3:hover {
+    transform: scale(1.02);
 }
 
 h2 {
-    margin: 20px;
-    height: auto;
-    text-align: center;
+    margin: 20px 20px 40px 20px;
 }
 
-p {
-    text-align: center;
+h3 {
     margin: 10px;
 }
 
-#vardag {
-   
+p {
+    margin: 10px;
 }
 
-#helg {
-    
-}   
+strong {
+    color: red;
+    margin: 10px;
+}
+
+#textruta1 {
+    background-color: green;
+    margin: 0px 20px 0px 20px;
+}
+
+#textruta2 {
+    background-color: orange;
+    margin: 0px 20px 0px 20px;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+#textruta3 {
+    margin: 0px 20px 0px 20px;
+    background-color: white;
+}
