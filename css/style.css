@@ -36,13 +36,8 @@ footer {
     background-color: pink;
     margin: 10px 5px 10px 10px;
     border-radius: 20px;
-    transition: 1s;
     text-align: center;
     border: solid black 3px;
-}
-
-.ruta1:hover {
-    transform: scale(1.02);
 }
 
 .ruta2 {
@@ -50,13 +45,8 @@ footer {
     background-color: white;
     margin: 10px 5px 10px 5px;
     border-radius: 20px;
-    transition: 1s;
     text-align: center;
     border: solid black 3px;
-}
-
-.ruta2:hover {
-    transform: scale(1.02);
 }
 
 .ruta3 {
@@ -64,13 +54,8 @@ footer {
     background-color: green;
     margin: 10px 10px 10px 5px;
     border-radius: 20px;
-    transition: 1s;
     text-align: center;
     border: solid black 3px;
-}
-
-.ruta3:hover {
-    transform: scale(1.02);
 }
 
 h2 {
@@ -91,7 +76,6 @@ strong {
 }
 
 #textruta1 {
-    background-color: green;
     margin: 0px 20px 0px 20px;
 }
 
@@ -100,9 +84,41 @@ strong {
     margin: 0px 20px 0px 20px;
     border: solid black 2px;
     border-radius: 10px;
+    transition: 1s;
+}
+
+#textruta2:hover {
+    transform: scale(1.02);
+    
+}
+
+#knapp_boka{
+    width: 300px;
+    height: 60px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 #textruta3 {
     margin: 0px 20px 0px 20px;
     background-color: white;
+}
+
+#knapp_restaurang {
+    width: 260px;
+    height: 60px;
+    border: solid black 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(223, 69, 69);
+    transition: 0.5s;
+}
+
+#knapp_restaurang:active{
+    
+}
+
+#knapp_restaurang:hover {
+transform: scale(1.02);
 }
