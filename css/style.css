@@ -5,16 +5,23 @@
 
 header {
     height: 100px;
-    background-color: orange;
+    background-color: rgb(65, 70, 133);
+    justify-content: space-between;
+    display: flex;
     align-items: center;
-    display: grid;
-    justify-content: center;
-    
+    position: fixed;
+    width: 100%;
+}
+
+#hamburger_icon{
+    height: 50px;
+    width: auto;
+    margin: 20px;
 }
 
 section {
-    background-color: red;
     height: 600px;
+    background-color: gray;
 }
 
 footer {
@@ -27,7 +34,25 @@ img{
     width: auto;
 }
 
+h2{
+    margin: 20px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+
 /*Allt som tillhör index sidan*/
+
+#kangaroo{
+    width: 100%;
+    height: auto;
+}
 
 #gridwrapper{
     display: grid;
@@ -65,17 +90,9 @@ img{
     border: solid black 3px;
 }
 
-h2 {
+#text_rubrik {
     margin: 20px 20px 40px 20px;
     text-align: center;
-}
-
-h3 {
-    margin: 10px;
-}
-
-p {
-    margin: 10px;
 }
 
 strong {
