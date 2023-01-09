@@ -13,6 +13,11 @@ header {
     position: fixed;
     width: 100%;
     border: solid black 1.5px;
+    margin-bottom: 100px;
+}
+
+nav{
+    height: 100px;
 }
 
 a{
@@ -45,25 +50,30 @@ footer {
 }
 
 h1{
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
+    text-shadow: 1px 1px 2px black;
     
 }
 
 h2{
     margin: 20px;
     color: white;
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 2px black;
 }
 
 h3 {
     margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
     margin: 10px;
     color: white;
     font-size: 12px;
+    text-shadow: 1px 1px 2px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -90,6 +100,7 @@ p {
     border-radius: 20px;
     text-align: center;
     border: solid black 3px;
+    box-shadow: 5px 5px 5px black;
 }
 
 .ruta2 {
@@ -99,6 +110,7 @@ p {
     border-radius: 20px;
     text-align: center;
     border: solid black 3px;
+    box-shadow: 5px 5px 5px black;
 }
 
 .ruta3 {
@@ -108,15 +120,17 @@ p {
     border-radius: 20px;
     text-align: center;
     border: solid black 3px;
+    box-shadow: 5px 5px 5px black;
 }
 
 #text_rubrik {
     margin: 20px 20px 40px 20px;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 strong {
-    color: red;
+    color: white;
     margin: 10px;
 }
 
@@ -130,6 +144,7 @@ strong {
     border: solid black 2px;
     border-radius: 10px;
     transition: 1s;
+    box-shadow: 10px 5px 5px black;
 }
 
 #textruta2:hover {
@@ -143,6 +158,8 @@ strong {
     border-radius: 25px;
     margin-bottom: 10px;
     cursor: pointer;
+    box-shadow: 10px 5px 5px black;
+    border: solid black 2px;
 }
 
 #textruta3 {
@@ -158,10 +175,7 @@ strong {
     cursor: pointer;
     background-color: rgb(95,163,151);
     transition: 0.5s;
-}
-
-#knapp_restaurang:active{
-
+    box-shadow: 10px 5px 5px black;
 }
 
 #knapp_restaurang:hover {
@@ -173,6 +187,10 @@ transform: scale(1.02);
     width: auto;
 }
 
+button{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 /*Allt som tillhör Restaurang sidan*/
 #huvuddel {
@@ -186,6 +204,7 @@ transform: scale(1.02);
     grid-template-areas: 
     "m1 m2 m3"
     "m4 m5 m6";
+    
 }
 
 #meny1 {
@@ -194,6 +213,7 @@ transform: scale(1.02);
     border: solid black 2px;
     border-radius: 20px;
     grid-area: m1;
+    box-shadow: 10px 5px 5px black;
 }
 
 #meny2 {
@@ -202,6 +222,7 @@ transform: scale(1.02);
     border: solid black 2px;
     border-radius: 20px;
     grid-area: m2;
+    box-shadow: 10px 5px 5px black;
 }
 
 #meny3 {
@@ -210,6 +231,7 @@ transform: scale(1.02);
     border: solid black 2px;
     border-radius: 20px;
     grid-area: m3;
+    box-shadow: 10px 5px 5px black;
 }
 
 #meny4 {
@@ -218,6 +240,7 @@ transform: scale(1.02);
     border: solid black 2px;
     border-radius: 20px;
     grid-area: m4;
+    box-shadow: 10px 5px 5px black;
 }
 
 #meny5 {
@@ -226,6 +249,7 @@ transform: scale(1.02);
     border: solid black 2px;
     border-radius: 20px;
     grid-area: m5;
+    box-shadow: 10px 5px 5px black;
 }
 
 #meny6 {
@@ -234,11 +258,14 @@ transform: scale(1.02);
     border: solid black 2px;
     border-radius: 20px;
     grid-area: m6;
+    box-shadow: 10px 5px 5px black;
 }
 
 #meny_bilder{
     height: 80px;
     width: auto;
+    margin: 20px;
+    margin-top: 40px;
 }
 
 #restaurang_bild{
@@ -249,8 +276,7 @@ transform: scale(1.02);
 
 .meny_rubrik{
     font-size: 40px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 #prislista{
@@ -265,3 +291,102 @@ transform: scale(1.02);
 }
 
 /*Allt som tillhör Om Oss sidan*/
+#gridwrapper3{
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 
+    "ow pe pe"
+    "kl pe pe";
+}
+
+#owner {
+    grid-area: ow;
+    background-color: rgb(63,129,118);
+    border: solid black 1.5px;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 10px;
+}
+
+#kontaktlista {
+    grid-area: kl;
+    background-color: rgb(63,129,118);
+    border-radius: 50px;
+    border: solid black 1.5px;
+    box-shadow: 10px 5px 5px black;
+}
+
+#personal {
+    grid-area: pe;
+    background-color: rgb(63,129,118);
+    border: solid black 1.5px;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 10px;
+}
+
+#ownerpics {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+#personpics {
+    height: 60px;
+    width: auto;
+    border: solid gray 1.5px;
+}
+
+#mindre_rubriker{
+    margin: 20px;
+    text-align: center;
+}
+
+#minigridwrapper {
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 150px 150px;
+    grid-template-areas: 
+    "per1 per2 per3"
+    "per4 per5 per6";
+}
+
+#person1 {
+    grid-area: per1;
+}
+
+#person2 {
+    grid-area: per2;
+}
+
+#person3 {
+    grid-area: per3;
+}
+
+#person4 {
+    grid-area: per4;
+}
+
+#person5 {
+    grid-area: per5;
+}
+
+#person6 {
+    grid-area: per6;
+}
+
+.personalruta {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(12,71,57);
+    align-items: center;
+    border: solid black 1.5px;
+    box-shadow: 10px 5px 5px black;
+    margin: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
