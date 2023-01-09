@@ -1,16 +1,22 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 header {
     height: 100px;
-    background-color: rgb(65, 70, 133);
+    background-color: rgb(12,67,54);
     justify-content: space-between;
     display: flex;
     align-items: center;
     position: fixed;
     width: 100%;
+    border: solid black 1.5px;
+}
+
+a{
+    color: black;
 }
 
 #hamburger_icon{
@@ -21,21 +27,33 @@ header {
 
 section {
     height: 600px;
-    background-color: gray;
+    background-color: rgb(12,71,57);
 }
 
 footer {
-    background-color: blue;
+    background-color: rgb(12,67,54);
     height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid black 1.5px;
 }
 
-img{
-    height: 80px;
-    width: auto;
+#footertext{
+    margin: 0px;
+    color: white;
+}
+
+h1{
+    font-family: sans-serif;
+    color: white;
+    
 }
 
 h2{
     margin: 20px;
+    color: white;
+    font-family: sans-serif;
 }
 
 h3 {
@@ -44,6 +62,8 @@ h3 {
 
 p {
     margin: 10px;
+    color: white;
+    font-size: 12px;
 }
 
 
@@ -65,7 +85,7 @@ p {
 
 .ruta1 {
     grid-area: d1;
-    background-color: pink;
+    background-color: rgb(63,129,118);
     margin: 10px 5px 10px 10px;
     border-radius: 20px;
     text-align: center;
@@ -74,7 +94,7 @@ p {
 
 .ruta2 {
     grid-area: d2;
-    background-color: white;
+    background-color: rgb(63,129,118);
     margin: 10px 5px 10px 5px;
     border-radius: 20px;
     text-align: center;
@@ -83,7 +103,7 @@ p {
 
 .ruta3 {
     grid-area: d3;
-    background-color: green;
+    background-color: rgb(63,129,118);
     margin: 10px 10px 10px 5px;
     border-radius: 20px;
     text-align: center;
@@ -105,7 +125,7 @@ strong {
 }
 
 #textruta2 {
-    background-color: orange;
+    background-color: rgb(95,163,151);
     margin: 0px 20px 0px 20px;
     border: solid black 2px;
     border-radius: 10px;
@@ -136,7 +156,7 @@ strong {
     border: solid black 2px;
     border-radius: 30px;
     cursor: pointer;
-    background-color: rgb(223, 69, 69);
+    background-color: rgb(95,163,151);
     transition: 0.5s;
 }
 
@@ -148,10 +168,15 @@ strong {
 transform: scale(1.02);
 }
 
+#restaurang_info_bild{
+    height: 140px;
+    width: auto;
+}
+
 
 /*Allt som tillhör Restaurang sidan*/
 #huvuddel {
-    height: 1000px;
+    height: auto;
 }
 
 #gridwrapper2{
@@ -164,7 +189,7 @@ transform: scale(1.02);
 }
 
 #meny1 {
-    background-color: white;
+    background-color: rgb(63,129,118);
     margin: 20px;
     border: solid black 2px;
     border-radius: 20px;
@@ -172,7 +197,7 @@ transform: scale(1.02);
 }
 
 #meny2 {
-    background-color: brown;
+    background-color: rgb(63,129,118);
     margin: 20px;
     border: solid black 2px;
     border-radius: 20px;
@@ -180,7 +205,7 @@ transform: scale(1.02);
 }
 
 #meny3 {
-    background-color: purple;
+    background-color: rgb(63,129,118);
     margin: 20px;
     border: solid black 2px;
     border-radius: 20px;
@@ -188,7 +213,7 @@ transform: scale(1.02);
 }
 
 #meny4 {
-    background-color: green;
+    background-color: rgb(63,129,118);
     margin: 20px;
     border: solid black 2px;
     border-radius: 20px;
@@ -196,7 +221,7 @@ transform: scale(1.02);
 }
 
 #meny5 {
-    background-color: yellow;
+    background-color: rgb(63,129,118);
     margin: 20px;
     border: solid black 2px;
     border-radius: 20px;
@@ -205,12 +230,38 @@ transform: scale(1.02);
 
 #meny6 {
     margin: 20px;
-    background-color: aquamarine;
+    background-color: rgb(63,129,118);
     border: solid black 2px;
     border-radius: 20px;
     grid-area: m6;
 }
 
+#meny_bilder{
+    height: 80px;
+    width: auto;
+}
 
+#restaurang_bild{
+    border: dotted black 2px;
+    width: 100%;
+    height: auto;
+}
+
+.meny_rubrik{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#prislista{
+    display: flex;
+    justify-content: space-between;
+}
+
+#matbilder{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 /*Allt som tillhör Om Oss sidan*/
